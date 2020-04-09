@@ -8,6 +8,7 @@ import {isURLInList} from '../../../../utils/url';
 import {compileMarkdown} from '../../utils/markdown';
 import {getLocalMessage} from '../../../../utils/locales';
 import {ExtWrapper, FilterConfig, TabInfo} from '../../../../definitions';
+import ResetButton from '../reset-button';
 
 export default function MoreSettings({data, actions, tab}: ExtWrapper & {tab: TabInfo}) {
 
@@ -63,6 +64,11 @@ export default function MoreSettings({data, actions, tab}: ExtWrapper & {tab: Ta
                     </p>
                 </div>
             ) : null}
+            <div class="more-settings__section">
+                <ResetButton
+                        actions={actions}
+                />
+            </div>
         </section>
     );
 }

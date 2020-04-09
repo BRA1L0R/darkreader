@@ -6,7 +6,7 @@ import {UserSettings} from '../definitions';
 const SAVE_TIMEOUT = 1000;
 
 export default class UserStorage {
-    private defaultSettings: UserSettings;
+    defaultSettings: UserSettings;
 
     constructor() {
         this.defaultSettings = {
